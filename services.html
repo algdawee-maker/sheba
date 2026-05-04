@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#d4e3ff",
+                        "primary": "#000613",
+                        "on-tertiary-container": "#848688",
+                        "secondary-fixed-dim": "#e9c349",
+                        "surface-bright": "#fbf9f8",
+                        "surface-dim": "#dbd9d9",
+                        "on-error-container": "#93000a",
+                        "secondary": "#735c00",
+                        "tertiary": "#040607",
+                        "secondary-container": "#fed65b",
+                        "surface-variant": "#e4e2e2",
+                        "on-tertiary-fixed": "#191c1d",
+                        "secondary-fixed": "#ffe088",
+                        "on-primary-fixed": "#001c3a",
+                        "outline": "#74777f",
+                        "surface-tint": "#476083",
+                        "on-secondary-container": "#745c00",
+                        "on-tertiary-fixed-variant": "#454748",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#c4c6cf",
+                        "tertiary-fixed": "#e1e3e4",
+                        "tertiary-container": "#1c1f20",
+                        "surface-container": "#efeded",
+                        "surface-container-highest": "#e4e2e2",
+                        "error": "#ba1a1a",
+                        "primary-container": "#001f3f",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#eae8e7",
+                        "background": "#fbf9f8",
+                        "on-primary-container": "#6f88ad",
+                        "inverse-on-surface": "#f2f0f0",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#2f486a",
+                        "on-surface-variant": "#43474e",
+                        "surface": "#fbf9f8",
+                        "surface-container-low": "#f5f3f3",
+                        "inverse-surface": "#303030",
+                        "on-background": "#1b1c1c",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#241a00",
+                        "inverse-primary": "#afc8f0",
+                        "primary-fixed-dim": "#afc8f0",
+                        "on-surface": "#1b1c1c",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed-variant": "#574500",
+                        "tertiary-fixed-dim": "#c5c7c8",
+                        "on-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "container-max": "1280px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-caps": ["Plus Jakarta Sans"],
+                        "h1": ["Noto Serif"],
+                        "h3": ["Plus Jakarta Sans"],
+                        "h2": ["Noto Serif"],
+                        "button": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1rem", "fontWeight": "700"}],
+                        "h1": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "h2": ["36px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "h3": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "button": ["16px", {"lineHeight": "1.0", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .luxury-gradient {
+            background: linear-gradient(135deg, rgba(0,6,19,1) 0%, rgba(0,31,63,1) 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md" dir="rtl">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 h-20 bg-white/95 dark:bg-slate-950/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="flex items-center">
+<span class="text-2xl font-black text-slate-900 dark:text-white tracking-tighter uppercase">Sheba Line</span>
+</div>
+<div class="hidden md:flex space-x-8 space-x-reverse items-center">
+<a class="font-serif text-sm uppercase tracking-wide text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors" href="#">الرئيسية</a>
+<a class="font-serif text-sm uppercase tracking-wide text-amber-600 dark:text-amber-500 border-b-2 border-amber-600 dark:border-amber-500 pb-1 font-bold" href="#">خدماتنا</a>
+<a class="font-serif text-sm uppercase tracking-wide text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors" href="#">من نحن</a>
+<a class="font-serif text-sm uppercase tracking-wide text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors" href="#">اتصل بنا</a>
+</div>
+<div class="flex items-center space-x-6 space-x-reverse">
+<button class="material-symbols-outlined text-slate-900 dark:text-slate-50 hover:opacity-80 transition-all duration-300">chat</button>
+<button class="bg-primary text-white px-6 py-2 font-button text-button hover:opacity-80 transition-all duration-300 active:scale-95">احجز الآن</button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[614px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-primary/40 z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A cinematic wide shot of a modern white airplane flying high above a sea of soft clouds during a golden sunset. The lighting is warm and ethereal, reflecting the luxury and prestige of Sheba Line. The overall mood is serene and professional, with a deep navy and gold color palette visible in the sky's gradients." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFs8ZetGAcrMP1amxOqooVFD7brev-2-jqrD1YT0t8rL6J5RTheBvgIzxFAzqqQrupEWHgJXpRGGQRycmM3GbSOHCFK1031UB9PIyBoMABi9PJrUrQWfPLvKQEeUd3fgydCKOn9lBqLDKa-J8RHQlISZO7WPpmWwJxDqpRUIPInVKPYkIOUfPIjZkrf4CbwDqmC-UsfUS3eGfyFeNV-o3DUgQUEXavsMjhtsgGC2wF9PjWs1ddaXcmEjh_ioew_gzfsjD5DCmnZG8Q"/>
+<div class="relative z-20 text-center px-4 max-w-4xl">
+<span class="font-label-caps text-label-caps text-secondary-container mb-4 block uppercase tracking-widest">خدماتنا</span>
+<h1 class="font-h1 text-h1 text-white mb-6">نارتقي بكل رحلة</h1>
+<p class="font-body-lg text-body-lg text-white/90 max-w-2xl mx-auto">اكتشف عالماً من السفر السلس حيث تلتقي الضيافة الأصيلة بالدقة الحديثة. من حجوزات الطيران إلى التأشيرات العالمية، شيبا لاين تهتم بكل التفاصيل.</p>
+</div>
+</section>
+<!-- Flight Booking Section -->
+<section class="py-24 px-8 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div class="max-w-xl text-right">
+<h2 class="font-h2 text-h2 text-primary mb-4">حجوزات الطيران</h2>
+<p class="text-on-surface-variant font-body-md">شريك رسمي للخطوط الجوية اليمنية وطيران الملكة بلقيس، نربطكم بأهم المراكز الإقليمية بخدمة ذات أولوية.</p>
+</div>
+<div class="flex gap-4"><span class="px-5 py-2.5 bg-white border border-slate-200 shadow-sm rounded-lg text-primary font-bold flex items-center gap-3 transition-all hover:border-secondary/50">
+<span class="material-symbols-outlined text-secondary text-xl" style="font-variation-settings: 'FILL' 1;">flight_takeoff</span>
+<span class="tracking-tight">الخطوط الجوية اليمنية</span>
+</span>
+<span class="px-5 py-2.5 bg-white border border-slate-200 shadow-sm rounded-lg text-primary font-bold flex items-center gap-3 transition-all hover:border-secondary/50">
+<span class="material-symbols-outlined text-secondary text-xl" style="font-variation-settings: 'FILL' 1;">flight_takeoff</span>
+<span class="tracking-tight">طيران الملكة بلقيس</span>
+</span></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Cairo -->
+<div class="group bg-white border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-500">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="The Great Pyramids of Giza" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAYvUp99at7H09Jd80tVffWbjm1JCjmQ-AldGvVkUQjjYePj4tcolYxbX7UU1Dmq5O22i67nu_7Req8sNdVf4pZsE9c3v1wUNO9aWP4g9qaydHPh7CSIrwXJ0QClQoaUf7JE0qMnH9XPl3keEpDbO44JXfE3OMInma6kpyi_V6aNxe11u1wmfhcxrLj-eZxFuXkn3bpOBveeEXqC70KaSkDB9IVJ4jhr8jtpqPjJC105jCFYk_P4UuKot_q8Aw2XpdV0rp-4YC-lfE"/>
+<div class="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-md text-primary font-bold text-xs uppercase tracking-wider">الوجهة الأبرز</div>
+</div>
+<div class="p-8 text-right">
+<h3 class="font-h3 text-h3 text-primary mb-2">القاهرة، مصر</h3>
+<p class="text-on-surface-variant mb-6 text-sm">رحلات يومية من عدن وصنعاء. اختبر قلب العالم العربي مع خدمات الترانزيت المميزة لدينا.</p>
+<button class="flex items-center gap-2 font-button text-primary group-hover:gap-4 transition-all">التحقق من التوفر <span class="material-symbols-outlined rotate-180">arrow_forward</span></button>
+</div>
+</div>
+<!-- Amman -->
+<div class="group bg-white border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-500">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Amman, Jordan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCImtB-0ddFkXAD0kvzAXfaD-2lun6cswlKxEXGAueSWIO-HoaYJIzokkMbIt7L0lGPSLuE010P0lOOvOmbnowjRp1b8cAwDl3wB7cUOwiWGhXTXm4yRGOeQH_30smz5RfzJmzD3Kj5vLmlgTEO1DMkyuBVu2mDxUPnQMJOrZsSnlnVFk6YTwzcCcjvJ2fGoBcdFu4hpdya4EKgmeHeShHHJqTsXlH6QQd1sY_0UrgRSs5VQ3HWCZ3f2SjqSWLaTtNZzuEce1_7wGzU"/>
+</div>
+<div class="p-8 text-right">
+<h3 class="font-h3 text-h3 text-primary mb-2">عمان، الأردن</h3>
+<p class="text-on-surface-variant mb-6 text-sm">تواصل سلس للسياحة العلاجية والترفيه. شراكات مع مقدمي الرعاية الصحية الإقليميين لرحلة خالية من القلق.</p>
+<button class="flex items-center gap-2 font-button text-primary group-hover:gap-4 transition-all">التحقق من التوفر <span class="material-symbols-outlined rotate-180">arrow_forward</span></button>
+</div>
+</div>
+<!-- Jeddah -->
+<div class="group bg-white border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-500">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Jeddah, KSA" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhUTIcztEeVNXUXGA_K9Pa8_RT3K7Wjo47Jvpe6lgQ0z6OgMTg3UfG0PNysSgMnZs2vIsMveTaQ9-9A7Uf2rqzRJtkglep5pV3L0TDOsbOi9H6j6D4Ku1cI75IMq7tIQtJNitOeSO-VgGSuGTrVMxoqqgtja3a1V3RXdx7qG4AuSOoaRtOWkU8o3aWSRJ3eC9AnPxuAXXI5a2j-exE8kewNN9gdlsqgrQ4NxvkaTrZlWGVRsobzRylq_Cb0JYYvnrt-IpIRBCfgu5n"/>
+</div>
+<div class="p-8 text-right">
+<h3 class="font-h3 text-h3 text-primary mb-2">جدة، السعودية</h3>
+<p class="text-on-surface-variant mb-6 text-sm">رحلات مباشرة للأعمال ومعتمري بيت الله الحرام. استمتع بدخول حصري لصالات المطار.</p>
+<button class="flex items-center gap-2 font-button text-primary group-hover:gap-4 transition-all">التحقق من التوفر <span class="material-symbols-outlined rotate-180">arrow_forward</span></button>
+</div>
+</div>
+</div>
+</section>
+<!-- Socotra Spotlight Section -->
+<section class="py-24 bg-primary text-white overflow-hidden relative">
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-20 pointer-events-none">
+<svg class="w-full h-full text-secondary" fill="currentColor" preserveaspectratio="none" viewbox="0 0 100 100">
+<polygon points="100,0 100,100 0,100"></polygon>
+</svg>
+</div>
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="text-right order-2 lg:order-1">
+<span class="font-label-caps text-secondary-fixed mb-4 block uppercase tracking-widest">جوهرة المحيط</span>
+<h2 class="font-h2 text-4xl md:text-5xl mb-6">جزيرة سقطرى: الجنة المنسية</h2>
+<p class="text-white/80 font-body-lg mb-8 leading-loose">
+                        اكتشف أغرب وأجمل جزيرة في العالم. من أشجار "دم الأخوين" الأسطورية إلى الشواطئ البيضاء البكر، نقدم لك رحلة العمر إلى أرخبيل سقطرى مع خدمات متميزة تشمل الطيران الخاص، الإرشاد السياحي المتخصص، وتجهيزات التخييم الفاخرة.
+                    </p>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-3 justify-end">
+<span>جولات استكشافية لأشجار دم الأخوين</span>
+<span class="material-symbols-outlined text-secondary">eco</span>
+</li>
+<li class="flex items-center gap-3 justify-end">
+<span>رحلات بحرية في محمية ديحمري</span>
+<span class="material-symbols-outlined text-secondary">sailing</span>
+</li>
+<li class="flex items-center gap-3 justify-end">
+<span>خدمات لوجستية وتراخيص كاملة</span>
+<span class="material-symbols-outlined text-secondary">verified_user</span>
+</li>
+</ul>
+<button class="bg-secondary text-primary px-10 py-4 font-button hover:bg-secondary-fixed transition-all rounded-sm shadow-lg">احجز رحلتك الآن</button>
+</div>
+<div class="grid grid-cols-2 gap-4 order-1 lg:order-2">
+<div class="space-y-4 pt-12">
+<img class="w-full aspect-[3/4] object-cover rounded-sm shadow-2xl" data-alt="Socotra Dragon Blood Tree" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIm_f9f6p8W4M6_mZzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXzXyXz"/>
+<script>
+                            // Fallback if the placeholder-like string fails. Using a descriptive placeholder description for Socotra.
+                            document.currentScript.previousElementSibling.src = "https://images.unsplash.com/photo-15403040be-7e779069698d?auto=format&fit=crop&q=80&w=800";
+                        </script>
+<img class="w-full aspect-square object-cover rounded-sm shadow-2xl" data-alt="Socotra Landscapes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkVxqxb6S8igX3k5f2bRttykV8BAMNjCFV0BKFeHiRihSnN9FDPIrl4ZdaMGQjcCAMGQzF5YCk_i95TDJ3fRzO_oY4rMS5BlnL128drq2QDdKylPRCXE6J6P-TSfyu0ZhfWy_LuVpKv3ce2aFPcMu1VKScP0nezMIt9M5a0H0P-Y89XzeSjkkTJBr9qTptsgjwxENTdikGrbemNfNlF2ftMWG_PG7JnhGZj8q1fqgjwShD9C49JGPyVs2rI7zss21sheHZrMHt1yXR"/>
+</div>
+<div class="space-y-4">
+<img class="w-full aspect-square object-cover rounded-sm shadow-2xl" data-alt="Socotra Unique Nature" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMQ4nrHeAfxXRLUwHH2jafJ-t_xjyjI9A44b-sttqId9jpSm7t_l4_QDo_xhsHb5Bf5-MP3L3FaEvaX6dInr8ApGgulA4Y7-fPenVdp3E97g0cwaVAcrimucU5czRRs9K31QXQg3kUYZiNofi_Igh_htiWBUwMj2b38mKUHmjEOXVwfOp_4gAGhxlFNCu5xaXpF-S9hRchL0Txu3HZ71Ju32GkMqQ-zYYK5Hvkf8svzWck4vMe_YH290BPH5C55ayc-CEzJTc_qn3T"/>
+<img class="w-full aspect-[3/4] object-cover rounded-sm shadow-2xl" data-alt="Socotra Beach" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZKy6zq34HV876hAid6HPCWdgrI4RsVXplmUhXd_47KaZ6KDKWYNxd1fC2mSZT8YN8V7FlAkGUd-BZJUJkAQsd3mDtqOLeDScHuD66O7zz-PUpUUCsr6JDmnuI02ESwqlom0FRUIB4n0UbNcg6CFDAss4dzKAH7SjT4-24iZzuXd8PlJ7o4D_yHMXsoj0MYJrr3iVLHVr2B6WLI4B3SacN1ycEE7_h8VjfiXXobNdTZ2DBrdRsxiiLJxol7e_e_hTlyW6RFAz_hpo8"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Tourism Programs (Bento Grid) -->
+<section class="bg-surface-container-low py-24 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-h2 text-h2 text-primary mb-4">برامج سياحية منسقة</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">من جبال إب الخضراء إلى جمال سقطرى التاريخي، صممت جولاتنا المحلية والدولية للمسافرين الباحثين عن التميز.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 h-[800px]">
+<div class="md:col-span-2 md:row-span-2 relative overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Lush mountains of Ibb, Yemen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi_FnfgwzluR9YO1LMhMAMYXXViMLfTDubK455IIpkG_FXf5cjWCShhtghlz-NufXCxH4VRqZiBGDj6Tu0Z7XJD-yTVrQpnuxlW4U_BwUqgnTJQsh8krIYEXZmX3SnpF9-sjhna7WiYdG6ly_z0Z6S6s7fzsDep5a6JoG9eDdQVU-yHj4H2N1uWnvbkdJuf5nmd7MSs1FcseXFYzdZeseAkPh05dOKsWTeU99O-FZh_W-4Ue5tNump6SzU1B_-Nak2nFQd9Od5Fau0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 right-0 p-10 text-white text-right">
+<span class="font-label-caps bg-secondary px-3 py-1 mb-4 inline-block">سياحة محلية</span>
+<h3 class="font-h2 text-h2 mb-4">الجوهرة الخضراء: إب وتعز</h3>
+<p class="text-white/80 max-w-md mb-6">استكشف جمال المدرجات والحصون التاريخية في قلب اليمن مع مرشدين خاصين ونقل آمن.</p>
+<button class="px-8 py-3 bg-white text-primary font-button hover:bg-secondary-container transition-colors">عرض البرنامج</button>
+</div>
+</div>
+<div class="md:col-span-2 relative overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Tokyo, Japan at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaaBnOajRq5CGoGGtn9YqXeqOpgVOUnGQrBeNhl7yWx0fTkdK7xQincx39hL-dgZD6-3AL0uhL3IJ2fdPjiIKt0rvm5xmq6goz6ssnNqnLJuxuUmMD0jfuk-kbesPFI5zvA5OrHn7d3rvjWb6mr6SZuwHixMJJk_asTMvjppsMxonW0c_skeMzM7XomptCTgLQ6NS3iaW2x2WhDg6X2QiVQMJ5vArASCtOEinuNaTCRzcyhoLudqdG_x384nVbCA5EP67lDe4FHMpB"/>
+<div class="absolute inset-0 bg-primary/40 group-hover:bg-primary/20 transition-colors"></div>
+<div class="absolute inset-0 flex flex-col justify-center items-center text-white p-8">
+<h3 class="font-h3 text-h3 mb-2">آفاق عالمية</h3>
+<p class="text-white/80 text-center">باقات مخصصة لتركيا، اليابان، وأوروبا الغربية.</p>
+</div>
+</div>
+<div class="md:col-span-1 relative overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Maldives resort" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD70PHjVXNNMuSoMWt-p8GoGq04NhUzBUm0zz_UjEP4fer0MlqO_0XkBc8OAHIlE6mfV1j4Tfe4e9i4Al_ldto_wA7hysf_eQCxgI8hnz-elNaq8FJlfCplvro1G_EafqUUtnDxcQ4y2lp3rVIZcoWrTZbw7hb_UiNGlVbxcm59yNFewF2tRMEER0Csp31XMZUCRz6DhtmMSBSznqSF2UxQwH7uqcJ0Eu7UiCcFAOYsg4QHh1Ap4_eD34jjID6IZr1MFzKfR1PgEsBl"/>
+<div class="absolute inset-0 bg-primary/30"></div>
+<div class="absolute bottom-6 right-6 text-white">
+<h4 class="font-h3 text-lg font-bold">عروض شهر العسل</h4>
+</div>
+</div>
+<div class="md:col-span-1 relative overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Business traveler" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmtcQx705SoefATtivCrEvjX4mxO2GQKGDIeR-QKdnEgpauPR0vUHutx9pSxKbpRFHYrMcqsaPsdIzKHIt4I79Kxtst4Lip-aJB6iQbxZII6wmylZECyLwxRfysDr5paSZh5ouIbR0-usn9ULqjYx9Tyu6PVG2f4OVMHo9AKxcz6obi5xYr_jdHWSPeibH10xIdqNToxmbynSIsLdx-Nd21tt2Vot2qCOsHStCGYaMkNgX1Xwe1yEh58al-b91O8t_Swj19yUN48pG"/>
+<div class="absolute inset-0 bg-primary/30"></div>
+<div class="absolute bottom-6 right-6 text-white">
+<h4 class="font-h3 text-lg font-bold">سياحة المؤتمرات</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Visas & Shipping Section -->
+<section class="py-24 px-8 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="text-right">
+<span class="font-label-caps text-secondary mb-4 block">اللوجستيات والأوراق الرسمية</span>
+<h2 class="font-h2 text-h2 text-primary mb-8">دعم سفر شامل</h2>
+<div class="space-y-8">
+<div class="flex gap-6 p-6 bg-white border border-slate-100 shadow-sm flex-row-reverse">
+<div class="w-16 h-16 bg-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-3xl">contract</span>
+</div>
+<div class="text-right">
+<h4 class="font-h3 text-h3 text-primary mb-2 text-xl">التأشيرات والمعاملات</h4>
+<p class="text-on-surface-variant text-sm">ندير طلبات التأشيرات لمصر والأردن ودول الخليج، بما في ذلك جميع الأوراق المطلوبة والتصديقات.</p>
+</div>
+</div>
+<div class="flex gap-6 p-6 bg-white border border-slate-100 shadow-sm flex-row-reverse">
+<div class="w-16 h-16 bg-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-3xl">local_shipping</span>
+</div>
+<div class="text-right">
+<h4 class="font-h3 text-h3 text-primary mb-2 text-xl">النقل البري والشحن</h4>
+<p class="text-on-surface-variant text-sm">أسطول بري مخصص يربط جميع المحافظات اليمنية. شحن آمن للطرود والبضائع التجارية مع تتبع لحظي.</p>
+</div>
+</div>
+<div class="flex gap-6 p-6 bg-white border border-slate-100 shadow-sm flex-row-reverse">
+<div class="w-16 h-16 bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-3xl">work_history</span>
+</div>
+<div class="text-right">
+<h4 class="font-h3 text-h3 text-primary mb-2 text-xl">تنسيق شركات الطيران</h4>
+<p class="text-on-surface-variant text-sm">إدارة خطوط السير المعقدة بين عدة شركات طيران، لضمان انتقال سلس بين الرحلات الدولية والمحلية.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative h-[600px]">
+<div class="absolute inset-0 luxury-gradient opacity-10 rotate-3 -translate-x-4 translate-y-4"></div>
+<img class="absolute inset-0 w-full h-full object-cover shadow-2xl" data-alt="Travel planning" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzxe3EQwkTf7bLfp-mij0l0a2mmw0bJDQUuNqg8q94_FBFvfbcz0w6POeZJ6dEtAbYbCjDFPOd191KLsZAPHUNhRCxVDNfRbFWjsG8anczUxKcYI4-XOQohJf5IDIlstmx8pUBo3qHQbYki-hM5OoPz1YxrXyc7XhSpSgOxxgVoGP0Ktt9ALJbiunORqSFCOCs6nOUpReqOy8UTJ4D0UYjMAHh82Grz8vL4qYPhUwu-V12QlBlU9jQyv9vKxkl-7b-yYCn0SHQidbV"/>
+<div class="absolute -bottom-8 -right-8 bg-primary p-10 text-white hidden md:block">
+<p class="font-h1 text-4xl font-bold mb-1">15+</p>
+<p class="font-label-caps text-secondary-container">عاماً من التميز</p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 px-8">
+<div class="max-w-5xl mx-auto luxury-gradient p-16 text-center text-white relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+<h2 class="font-h2 text-h2 mb-6">هل أنت مستعد لبدء رحلتك؟</h2>
+<p class="font-body-lg text-body-lg text-white/80 mb-10 max-w-2xl mx-auto">تواصل مع وكلائنا المخصصين للحصول على حجوزات مخصصة، استشارات تأشيرة، أو استفسارات لوجستية.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-secondary text-primary px-10 py-4 font-button hover:bg-secondary-fixed transition-colors">تحدث مع وكيل</button>
+<button class="border border-white/30 px-10 py-4 font-button hover:bg-white/10 transition-colors">مواقعنا</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto border-t border-slate-200 mt-24 text-right">
+<div class="md:col-span-1">
+<span class="text-xl font-bold text-primary mb-4 block uppercase tracking-tighter">Sheba Line</span>
+<p class="font-serif text-xs tracking-normal text-slate-400 mb-6 leading-relaxed">
+ يمن بالعالم.تصاميم وتطوير محمد صلاح الجداوي 2026
+        </p>
+</div>
+<div>
+<h5 class="font-label-caps text-secondary mb-6">اكتشف</h5>
+<ul class="space-y-4">
+<li><a class="font-serif text-xs text-slate-600 hover:text-amber-500 transition-colors" href="#">سياسة الخصوصية</a></li>
+<li><a class="font-serif text-xs text-slate-600 hover:text-amber-500 transition-colors" href="#">شروط الناقل</a></li>
+<li><a class="font-serif text-xs text-slate-600 hover:text-amber-500 transition-colors" href="#">متطلبات التأشيرة</a></li>
+<li><a class="font-serif text-xs text-slate-600 hover:text-amber-500 transition-colors" href="#">بوابة الشركاء</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-caps text-secondary mb-6">خدماتنا</h5>
+<ul class="space-y-4">
+<li><a class="font-serif text-xs text-slate-600 hover:text-amber-500 transition-colors" href="#">حجز الطيران</a></li>
+<li><a class="font-serif text-xs text-slate-600 hover:text-amber-500 transition-colors" href="#">البرامج السياحية</a></li>
+<li><a class="font-serif text-xs text-slate-600 hover:text-amber-500 transition-colors" href="#">التأشيرات والوثائق</a></li>
+<li><a class="font-serif text-xs text-slate-600 hover:text-amber-500 transition-colors" href="#">النقل البري</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-caps text-secondary mb-6">اتصل بنا</h5>
+<p class="font-serif text-xs text-slate-600 leading-relaxed">المكتب الرئيسي عدن المنصوره<br/>
+            البريد الإلكتروني: reservations@shebaline.com<br/>
+     +967780703167  </p>
+</div>
+</footer>
+</body></html>
