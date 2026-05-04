@@ -1,0 +1,38 @@
+backend:
+  name: git-gateway
+  branch: main # تأكد أن هذا هو اسم الفرع في حسابك على GitHub
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "إدارة الصفحات"
+    files:
+      - file: "index.html"
+        label: "الصفحة الرئيسية"
+        name: "home"
+        fields:
+          - {label: "العلامة العلوية (Label)", name: "hero_label", widget: "string"}
+          - {label: "العنوان الرئيسي (H1)", name: "hero_title", widget: "string"}
+          - {label: "الوصف النصي", name: "hero_desc", widget: "text"}
+          - {label: "صورة الخلفية الرئيسية", name: "hero_img", widget: "image"}
+          
+      - file: "services.html"
+        label: "صفحة الخدمات"
+        name: "services"
+        fields:
+          - {label: "عنوان الصفحة", name: "services_title", widget: "string"}
+          - {label: "قائمة الخدمات", name: "services_list", widget: "list", fields: [
+              {label: "اسم الخدمة", name: "title", widget: "string"},
+              {label: "وصف الخدمة", name: "desc", widget: "text"},
+              {label: "الأيقونة", name: "icon", widget: "string"}
+            ]}
+
+      - file: "contact.html"
+        label: "صفحة اتصل بنا"
+        name: "contact"
+        fields:
+          - {label: "عنوان التواصل", name: "contact_title", widget: "string"}
+          - {label: "رقم الهاتف", name: "phone_number", widget: "string"}
+          - {label: "العنوان الجغرافي", name: "address", widget: "string"}
